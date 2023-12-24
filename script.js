@@ -1,25 +1,14 @@
-// const friends = ['zeeshan' , 'hamza'];
+const bills=[125,555,44];
+const calcTip= function(billValue){
+    const tip=  billValue >= 50 && billValue<=300 ? 0.15* billValue : 0.2 *billValue;
+    return tip;
+  }
 
-// console.log(friends[friends.length-1]);
-// console.log(friends);
+  const tips=[calcTip(bills[0]),calcTip(bills[1]),calcTip(bills[2])];
+  
+ 
 
-const work= function(sleeping, eating){
-return sleeping-eating
-}
-
-
-const myDate =['mubashir',age=24,'tan color', 'agressive',23, work(7, 4)];
-console.log(myDate.push('sultani')); //7 
-// console.log(myDate.push('sultani'));
-console.log(myDate.pop());
-
-console.log(myDate.unshift('john'));
-
-console.log(myDate.shift());
-console.log(myDate.indexOf("tan color"));
-console.log(myDate.includes("tan color"));
+ const totals = [(bills[0]+tips[0]) , (bills[1]+tips[1]) ,  (bills[2]+tips[2]) ]
+    console.log(bills, tips ,totals);
 
 
-
-
-console.log(myDate);
