@@ -1,10 +1,25 @@
-const friends = ['zeeshan' , 'hamza', 'ehsaan'];
+// const friends = ['zeeshan' , 'hamza'];
 
-console.log(friends[friends.length-3]);
-console.log(friends);
+// console.log(friends[friends.length-1]);
+// console.log(friends);
 
-const myDate =['mubashir',age=24,'tan color', 'agressive',23];
-console.log(myDate[1]);
+const work= function(sleeping, eating){
+return sleeping-eating
+}
 
 
-console.log(myDate.includes('tan color'));
+const myDate =['mubashir',age=24,'tan color', 'agressive',23, work(7, 4)];
+console.log(myDate.push('sultani')); //7 
+// console.log(myDate.push('sultani'));
+console.log(myDate.pop());
+
+console.log(myDate.unshift('john'));
+
+console.log(myDate.shift());
+console.log(myDate.indexOf("tan color"));
+console.log(myDate.includes("tan color"));
+
+
+
+
+console.log(myDate);
