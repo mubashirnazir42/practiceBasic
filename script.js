@@ -1,89 +1,68 @@
-// const mark = {
-//     fullName: 'Mark Miller',
-//     mass: 78,
-//     height: 1.69,
-//     calcBMI: function () {
-//       this.bmi = this.mass / (this.height * this.height);
-//       return this.bmi;
-//     }
-//   };
+for(let k=0; k<=2;k++){
+  for(let i=1; i<=10; i=i+1){
+    console.log(`2 * ${i} = ${2*i} `);
+  
+  
+  }
+  console.log(`hi ${k}`);
+ 
+}
+
+console.log(`=====>the end<======`);
+
+const movies = [ `alexander` , `wall of karachi` , 'anonymousfunction' ];
+
+for(let l = 0; l<=movies.length-1 ; l++){
+ console.log( movies[l]);
+}
+
+movies.push('hi');
+console.log(movies);
+
+
+
+
+const birthYear = [1998 , 1994 , 2000 , 1876];
+
+
+for(let i=0 ; i<= birthYear.length-1 ; i++){
+
+const age = 2024 - birthYear[i]
+console.log(` my age is ${age} `);
+
+}
+
+for(let breakPoint = 5 ; breakPoint>=0 ; breakPoint--){
+console.log(birthYear[breakPoint]);
+}
+
+
+
+for(i=0; i<=2 ; i++){
+
+  console.log(`${i}`);
+
+  for(j=i+1 ; j<=5 ; j++){
+    console.log(`${j}`);
+  }
    
-//   const john = {
-//     fullName: 'John Smith',
-//     mass: 92,
-//     height: 1.95,
-//     calcBMI: function () {
-//       this.bmi = this.mass / (this.height * this.height);
-//       return this.bmi;
-//     }
-//   };
-   
-//   mark.calcBMI();
-//  john.calcBMI();
-
-// console.log(john.bmi);
-// console.log(mark.bmi);
-
-// if (mark.bmi > john.bmi) {
-//     console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})!`)
-//   } else if (john.bmi > mark.bmi) {
-//     console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})!`)
-//   }
+}
 
 
 
-const mubashir={
-  firstName : `mubashir Nazir`,
-  age:24,
-  lastName : `Nazir Hussain`,
-  familyName : `sultani`,
-  family : ['dadiyaal',`naniyaal`],
-
-  nazir :{
-    class : 'matric',
-    family : ['dadiyaal',`naniyaal`],
-    age:32,
-    calcString : function(){
-      return this.finalString = `${mubashir[`nazir`][`class`]} is the son of  ${mubashir.lastName} and he looks like ${mubashir[`nazir`]['family'][0]}. and he is follower of ${mubashir[`familyName`]}`
-     
-    }
-  },
-
-  calcString : function(){
-    
-    return this.finalString = `${this.firstName} is the son of  ${this.lastName} and he looks like ${this['family'][0]}. and he is follower of ${this.familyName}`
-   
+for(i=10 ; i>=3 ; i--){
+console.log(`outerloop`);  //10                 ,9,                 8,                7
+  for(j=1;j<=5 ; j++){
+    console.log(`innerloop`); // 1,2,3,4,5,      1,2,3,4,5          1,2,3,4,5         1,2,3,4,5
   }
 
-    
-  }
+}
 
+const y=Math.trunc(Math.random()*5)
+console.log(`${y}`);
+while(y==3){
+  console.log(`stop ${y}`);
+  break;
+}
 
-
-
-
-console.log(mubashir[`nazir`][`calcString`]());
-
-
-
-// const myinfor=[
-// 24,
-// function(num){
-// return 24-num
-// },
-//   {
-//     firstName : 'mubashir',
-//     lastName : `nazir`,
-//     age : '24'
-//   },
-
-//   {
-//     firstName : 'mubashir',
-//     lastName : `nazir`,
-//     age : '24'
-//   }
-
-// ]
-
-// console.log(myinfor[1](2));
 
