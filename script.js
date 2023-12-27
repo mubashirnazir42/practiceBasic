@@ -1,57 +1,34 @@
-const subYear = function(saal){
-return saal/2;
+"use strict"
+
+const birthYear = [1991,  "ali", 1986 , 2012, 2000]; 
+const ages= []; 
+for(let i=0 ; i<=birthYear.length-1 ; i++){ 
+  if(typeof birthYear[i] !== 'number') continue;
+  console.log(typeof birthYear[i]);
+      ages.push(2024 - birthYear[i]) 
+
 }
 
-const birthYear = function(year){
+console.log(ages);
 
+const boyfriendIsPaying = false;
+const isSale = false;
 
-  for(i=0; i <=year.length-1;i++){
-           
-    const x =subYear(year[i]);
-    console.log(x);
+if (boyfriendIsPaying || !isSale) {
+  console.log("Jesse will go shopping.");
+} else {
+  console.log("Jesse will not go shopping.");
+}
+
+const age = 12;
+if(age !==24){
+console.log(`can apply in uni`);
+}
+
+for(let k=0; k<=4 ; k++){
+  if(typeof(age) !== 'string') break;
+    console.log(`done`)
     
-
-    console.log(`my age is ${2024- year[i]}`); 
-  }
-
-
 }
-birthYear([1994,1997,2000,2010]);
-
-
-
-
-
-
-for(let rep =5; rep <= 10 ; rep= rep+1){
-  
-  console.log(`lifting up weight ${rep} 🏆 `);
-  
-  
-}
-
-const aliRaza =[
-  `ali`,
-  "raza",
-  2024-1994,
-  "sheikh",
-  [21,45,67],
-  {
-    fName : 'waqas',
-    sName : 'raheem',
-    tName : 'jonas'
-  }
-];
-
-const type=[];
-
-for(i=0 ; i<=aliRaza.length-1;i++){
-  console.log(aliRaza[i], typeof(aliRaza[i]));
-// type.push(typeof aliRaza[i]);
-type[i] = aliRaza[i]
-}
-
-console.log(type);
-
 
 
