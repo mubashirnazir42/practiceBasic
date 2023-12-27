@@ -31,4 +31,42 @@ for(let k=0; k<=4 ; k++){
     
 }
 
+for(let k=0; k<=10 ; k++){
+if(k==2) continue;
+console.log(`${k}`)
+}
 
+
+
+let friend = [
+
+  'mubashir',
+  [23,45,23],
+  2024-1994,
+  [`waseem`,'john','jonas']
+
+]
+const x=[]
+
+for(let i=friend.length-1;i>=0 ; i--){
+  
+ x.push(friend[i]);
+}
+
+console.log(x);
+
+
+for(let i=1 ; i<=3;i++){
+  for(let j=1 ; j<=3 ; j++){
+    for(k=1; k <=5 ; k++){
+      console.log(`${i}, ${j} , ${k}  `);
+    }
+  }
+}
+
+
+for(let j=3 ; j>=1;j--){
+  for(let k=5 ; k>=3 ; k--){
+    console.log(`${j} , ${k} `);
+  }
+}
