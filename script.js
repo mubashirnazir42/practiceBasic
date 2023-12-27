@@ -70,3 +70,30 @@ for(let j=3 ; j>=1;j--){
     console.log(`${j} , ${k} `);
   }
 }
+
+for(let x=1;x<=3;x++){
+  console.log(`-----------${x}-----------------`);
+  for(let k=4 ; k<=7 ; k++){
+    console.log(`-----------${k}-----------------`);
+    for(let  z=5; z>=1 ; z-- ){
+      console.log(`-----------${z}-----------------`);
+    }
+  }
+}
+
+let v=1;
+
+while(v<=10){
+  console.log(`${v}`);
+  v++;
+}
+
+let randomNumber= Math.trunc(Math.random()*6)+1;
+console.log(randomNumber);
+
+while(randomNumber !==6 ){
+  console.log(` you rolled a dice ${randomNumber}`);
+  randomNumber= Math.trunc(Math.random()*6)+1;
+  console.log(randomNumber);
+  
+}
