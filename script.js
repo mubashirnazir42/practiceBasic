@@ -1,50 +1,20 @@
-/* Write a function calcAverage which takes an array called arr as an argument. This function calculates
- the average of all numbers in the given array. This is a DIFFICULT challenge (we haven't done this before)!
-  Here is how to solve it if you feel like it:
+const mubashir = {
+  fname : 'mubashir',
+  newfor :[],
+  calcName : function(ali){
 
-First, you will need to add up all values in the array. To do the addition, start by creating 
-a variable sum that starts at 0. Then loop over the array using a for loop. In each iteration,
- add the current value to the sum variable. This way, by the end of the loop, you have all values added together.
-
-To calculate the average, divide the sum you calculated before by the length of the 
-array (because that's the number of elements).
-
-Call the function with the totals array.
-
-*/
-
-"use strict"
-
-
-
-const calcTip = function (bill) {
-  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-}
-
-const bills= [22, 295, 176, 440, 37, 105, 10, 1100, 86,  52];
-const tips =[];
-const totals =[];
-
-
-
-for(let i=0 ; i<= bills.length-1 ;i++){
-     tips[i]=calcTip(bills[i]) 
-     totals.push(bills[i] + tips[i] )   
-}
-
-console.log(tips);
-console.log(totals);
-
-const calcAverage = function(arr){
-  let sum=0
-  for(let i=0; i<= arr.length-1; i++){
-    sum= sum + arr[i]
+    for(let k=1; k<=2;k++){
+      this.strink = `${ali} my name is  ${this.fname} `
+      console.log(this.strink)
+    this.newfor.push(this.strink)
     
+    }
+   
   }
-const avg= sum/ arr.length;
-return avg;
 }
 
-console.log(calcAverage(totals));
-console.log(calcAverage(tips));
-console.log(calcAverage([2,3,7]));
+mubashir['calcName'](2)
+
+console.log(mubashir['newfor']);
+
+
